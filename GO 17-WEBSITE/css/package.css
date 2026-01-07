@@ -1,0 +1,111 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fffdf5;
+  color: #333;
+}
+
+header {
+  background-color: #ff6f61;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  background-color: #3c3832;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #e65100;
+}
+
+.packages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.package-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.package-card:hover {
+  transform: scale(1.05);
+}
+
+.package-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.package-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #d84315;
+}
+.btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 22px;
+    background: linear-gradient(135deg, #ff6a00, #ff9500);
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #e65c00, #ff7b00);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}

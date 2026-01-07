@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback - TastyBite</title>
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Cart</h1>
+  </header>
+<nav>
+      <ul>
+       <li> <a href="home.html">Home</a></li>
+      <li><a href="manu.html">Menu</a></li>
+       <li><a href="foreigners.html">Foreigners Food</a></li>
+      <li><a href="package.html">Package</a></li>
+      <li><a href="delivery.html">Delivery</a></li>
+      <li><a href="location.html">Location</a></li>
+       <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+             <li><a href="blog.html">Blog</a></li>
+               <li><a href="login.html">Login</a></li>
+               <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+
+<h1>🛒 Shopping Cart</h1>
+
+<div class="products">
+    <div class="product">
+        <h3>Burger</h3>
+        <p>Rs. 500</p>
+        <button onclick="addToCart('Burger', 500)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Pizza</h3>
+        <p>Rs. 1200</p>
+        <button onclick="addToCart('Pizza', 1200)">Add to Cart</button>
+    </div>
+</div>
+<div class="menu-item">
+        <h3>Creamy Pasta</h3>
+        <p>Rs.1800</p>
+        <button onclick="addToCart('Pizza', 1200)">Add to Cart</button
+      </div>
+      <div class="menu-item">
+        <h3>Fresh Salad</h3>
+        <p>Rs.780</p>
+ <button onclick="addToCart('Pizza', 780)">Add to Cart</button
+        
+      </div>
+      <div class="menu-item">
+        <h3>Hot Soup</h3>
+        <p>Rs.450</p>
+                <button onclick="addToCart('Pizza', 450)">Add to Cart</button
+      </div>
+      <div class="menu-item">
+        <h3>Chocolate Cookies</h3>
+        <p>Rs.150</p>
+                <button onclick="addToCart('Pizza', 150)">Add to Cart</button
+      </div>
+
+<h2>Your Cart</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="cart-items"></tbody>
+</table>
+
+<h3>Grand Total: Rs. <span id="grand-total">0</span></h3>
+
+<script src="js/cart.js"></script>
+</body>
+</html>

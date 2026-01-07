@@ -1,0 +1,132 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff6f61;
+  padding: 15px 30px;
+  color: #fff;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* Menu Section */
+.menu {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.menu h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #ff6f61;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-item h3 {
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.menu-item p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.price {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 22px;
+    background: linear-gradient(135deg, #ff6a00, #ff9500);
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #e65c00, #ff7b00);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
